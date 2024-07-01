@@ -1,11 +1,10 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 
 const Contact = () => {
   return (
     <div className="h-screen w-screen flex flex-col items-center justify-center bg-background">
-      <header className="w-full py-4 bg-primary flex justify-between items-center px-8">
-        <div className="text-accent text-2xl font-bold">Lotus Sentry Security Corp</div>
-      </header>
+      <Navbar />
       <main className="flex-grow flex flex-col items-center justify-center">
         <h1 className="text-4xl text-primary font-bold mb-4">Contact Us</h1>
         <p className="text-foreground text-lg mb-8">Get in touch with us for more information.</p>
