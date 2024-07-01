@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -9,68 +9,80 @@
 
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 0%;
- 
+
     --primary: 259.2 61.5% 51.6%; /* deep purple */
     --primary-foreground: 0 0% 100%;
- 
+
     --secondary: 0 0% 0%;
     --secondary-foreground: 0 0% 100%;
- 
+
     --muted: 0 0% 0%;
     --muted-foreground: 0 0% 100%;
- 
+
     --accent: 51.1 100% 50%; /* gold */
     --accent-foreground: 0 0% 0%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 0%;
     --input: 0 0% 0%;
     --ring: 259.2 61.5% 51.6%; /* deep purple */
- 
+
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --background: 0 0% 0%;
     --foreground: 0 0% 100%;
- 
+
     --card: 0 0% 0%;
     --card-foreground: 0 0% 100%;
- 
+
     --popover: 0 0% 0%;
     --popover-foreground: 0 0% 100%;
- 
+
     --primary: 0 0% 100%;
     --primary-foreground: 259.2 61.5% 51.6%; /* deep purple */
- 
+
     --secondary: 0 0% 0%;
     --secondary-foreground: 0 0% 100%;
- 
+
     --muted: 0 0% 0%;
     --muted-foreground: 0 0% 100%;
- 
+
     --accent: 51.1 100% 50%; /* gold */
     --accent-foreground: 0 0% 0%;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
- 
+
     --border: 0 0% 0%;
     --input: 0 0% 0%;
     --ring: 259.2 61.5% 51.6%; /* deep purple */
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-primary;
+  }
+  p {
+    @apply text-foreground;
+  }
+  a {
+    @apply text-accent hover:text-primary;
+  }
+  button {
+    @apply bg-primary text-primary-foreground py-2 px-4 rounded hover:bg-accent;
   }
 }

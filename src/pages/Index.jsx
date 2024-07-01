@@ -23,8 +23,8 @@ const Index = () => {
         <h1 className="text-4xl text-primary font-bold mb-4">Welcome to Lotus Sentry Security Corp</h1>
         <p className="text-foreground text-lg mb-8">Your gateway to real estate tokenization and investment opportunities.</p>
         <div className="space-x-4">
-          <Link to="/get-started" className="bg-primary text-secondary-foreground py-2 px-4 rounded hover:bg-accent">Get Started</Link>
-          <Link to="/learn-more" className="bg-primary text-secondary-foreground py-2 px-4 rounded hover:bg-accent">Learn More</Link>
+          <Link to="/get-started" className="bg-primary text-primary-foreground py-2 px-4 rounded hover:bg-accent">Get Started</Link>
+          <Link to="/learn-more" className="bg-primary text-primary-foreground py-2 px-4 rounded hover:bg-accent">Learn More</Link>
         </div>
       </main>
       <footer className="w-full py-4 bg-primary flex justify-center items-center text-secondary-foreground">
